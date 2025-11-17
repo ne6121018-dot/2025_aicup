@@ -29,7 +29,7 @@ pip install -r requirements.txt
 
 ├── Preprocess/              [資料前處理]
 
-: ├── feature_engineering.py
+\ ├── feature_engineering.py
     
     └── graph.py
 
@@ -98,6 +98,7 @@ AI 工具
 
 程式碼修正
 * gemini、claude
+
 
 
 
