@@ -19,11 +19,11 @@ pip install -r requirements.txt
 
 雲端下載連結: https://drive.google.com/drive/folders/1xAudFl5vnxj_HW-Bgmr6WuTVNWfk3wM9?usp=sharing
 
-* feature.csv -> 放入 feature/ 資料夾
+* Dataset
 
-* graph_data.pt -> 放入 graph/ 資料夾
+* feature
 
-* acct_mappings.csv -> 放入 graph/ 資料夾
+* graph
 
 ### feature_engineering.py
 生成特徵並輸出於feature/feature.csv
@@ -56,3 +56,4 @@ pip install -r requirements.txt
 
 ### 結果分析 (optional)       
         python ./analyze.py
+
