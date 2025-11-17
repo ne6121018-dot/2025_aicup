@@ -26,35 +26,22 @@ pip install -r requirements.txt
 * graph
 
 ## 3. 專案結構 (Project Structure)
-
+```
 ├── Preprocess/              [資料前處理]
-
-\ ├── feature_engineering.py
-    
+    ├── feature_engineering.py
     └── graph.py
-
 ├── Model/                   [模型訓練與推論]
-
     ├── model.py             定義 GNN 模型架構 (GraphSAGE + GAT)
-
     ├── train.py             模型訓練
-
     ├── pred.py              模型推論
-
     └── analyze.py           結果分析腳本
-
 ├── Dataset/                 [資料集] 存放原始比賽資料
-
 ├── feature/                 [輸出] 存放 feature_engineering.py 產出的 csv
-
 ├── graph/                   [輸出] 存放 graph.py 產出的圖資料
-
 ├── result/                  [輸出] 存放訓練模型 (.pth) 與分析結果
-
 ├── requirements.txt         環境套件清單
-
 └── README.md               專案說明文件
-
+```
 ## 4. 檔案功能說明 (File Descriptions)
 
 ### Preprocess (前處理)
@@ -98,6 +85,7 @@ AI 工具
 
 程式碼修正
 * gemini、claude
+
 
 
 
