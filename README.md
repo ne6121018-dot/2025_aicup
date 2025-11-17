@@ -27,8 +27,8 @@ pip install -r requirements.txt
 
 ## 3. 專案結構 (Project Structure)
 
-├── Preprocess/              [資料前處理]
-    ├── feature_engineering.py
+├── Preprocess/              [資料前處理] \n
+    ├── feature_engineering.py \n
     └── graph.py
 
 ├── Model/                   [模型訓練與推論]
@@ -96,6 +96,7 @@ AI 工具
 
 程式碼修正
 * gemini、claude
+
 
 
 
