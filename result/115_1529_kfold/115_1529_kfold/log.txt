@@ -1,0 +1,169 @@
+2025-11-05 15:29:04 [INFO] Output directory set to: ../result/115_1529_kfold
+2025-11-05 15:29:04 [INFO] 
+PyTorch Version: 1.9.1+cu111
+2025-11-05 15:29:04 [INFO] CUDA: True
+2025-11-05 15:29:04 [INFO] CUDA Version: 11.1
+2025-11-05 15:29:04 [INFO] GPU: NVIDIA GeForce RTX 3090
+2025-11-05 15:29:04 [INFO] ============================================================
+
+2025-11-05 15:29:04 [INFO] Loading pre-processed data from: ../graph
+2025-11-05 15:30:19 [INFO] Successfully loaded graph data and mappings.
+2025-11-05 15:30:19 [INFO] 
+--- Fold 1/5 ---
+2025-11-05 15:30:19 [INFO] Train samples: 263190, Val samples: 65798
+2025-11-05 15:30:19 [INFO] Train Alert(1) count: 803
+2025-11-05 15:30:19 [INFO] Val Alert(1) count: 201
+2025-11-05 15:30:19 [INFO] Creating GNN model...
+2025-11-05 15:30:19 [INFO] Feature num: 22
+2025-11-05 15:30:19 [INFO] Model Hyperparameters: 
+{
+  "in_channels": 22,
+  "hidden_channels": 80,
+  "num_layers": 4,
+  "dropout": 0.4
+}
+2025-11-05 15:30:19 [INFO] Model parameters: 61,634
+
+2025-11-05 15:30:19 [INFO] Training Hyperparameters: 
+{
+  "epochs": 400,
+  "lr": 0.008,
+  "weight_decay": 0.0005
+}
+2025-11-05 15:30:21 [INFO]   Training Fold 1...
+2025-11-05 15:51:56 [INFO]   - Early stopping at epoch 184
+2025-11-05 15:51:56 [INFO]   - (Finish) Fold Training
+2025-11-05 15:51:56 [INFO]   - Best validation Loss: 0.1386 (F1 at this point: 0.1034)
+2025-11-05 15:51:56 [INFO] Fold 1 F1 at Best Val Loss: 0.1034
+2025-11-05 15:51:58 [INFO] Save Graph: ../result/115_1529_kfold\training_history_fold_1.png
+2025-11-05 15:51:58 [INFO] Training History saved to: ../result/115_1529_kfold\training_history_fold_1.csv
+2025-11-05 15:51:58 [INFO] Fold 1 Time: 1298.76s
+2025-11-05 15:51:58 [INFO] 
+--- Fold 2/5 ---
+2025-11-05 15:51:58 [INFO] Train samples: 263190, Val samples: 65798
+2025-11-05 15:51:58 [INFO] Train Alert(1) count: 803
+2025-11-05 15:51:58 [INFO] Val Alert(1) count: 201
+2025-11-05 15:51:58 [INFO] Creating GNN model...
+2025-11-05 15:51:58 [INFO] Feature num: 22
+2025-11-05 15:51:58 [INFO] Model Hyperparameters: 
+{
+  "in_channels": 22,
+  "hidden_channels": 80,
+  "num_layers": 4,
+  "dropout": 0.4
+}
+2025-11-05 15:51:58 [INFO] Model parameters: 61,634
+
+2025-11-05 15:51:58 [INFO] Training Hyperparameters: 
+{
+  "epochs": 400,
+  "lr": 0.008,
+  "weight_decay": 0.0005
+}
+2025-11-05 15:52:00 [INFO]   Training Fold 2...
+2025-11-05 16:30:57 [INFO]   - Early stopping at epoch 301
+2025-11-05 16:30:57 [INFO]   - (Finish) Fold Training
+2025-11-05 16:30:57 [INFO]   - Best validation Loss: 0.1000 (F1 at this point: 0.1163)
+2025-11-05 16:30:57 [INFO] Fold 2 F1 at Best Val Loss: 0.1163
+2025-11-05 16:30:59 [INFO] Save Graph: ../result/115_1529_kfold\training_history_fold_2.png
+2025-11-05 16:30:59 [INFO] Training History saved to: ../result/115_1529_kfold\training_history_fold_2.csv
+2025-11-05 16:30:59 [INFO] Fold 2 Time: 2340.39s
+2025-11-05 16:30:59 [INFO] 
+--- Fold 3/5 ---
+2025-11-05 16:30:59 [INFO] Train samples: 263190, Val samples: 65798
+2025-11-05 16:30:59 [INFO] Train Alert(1) count: 803
+2025-11-05 16:30:59 [INFO] Val Alert(1) count: 201
+2025-11-05 16:30:59 [INFO] Creating GNN model...
+2025-11-05 16:30:59 [INFO] Feature num: 22
+2025-11-05 16:30:59 [INFO] Model Hyperparameters: 
+{
+  "in_channels": 22,
+  "hidden_channels": 80,
+  "num_layers": 4,
+  "dropout": 0.4
+}
+2025-11-05 16:30:59 [INFO] Model parameters: 61,634
+
+2025-11-05 16:30:59 [INFO] Training Hyperparameters: 
+{
+  "epochs": 400,
+  "lr": 0.008,
+  "weight_decay": 0.0005
+}
+2025-11-05 16:31:01 [INFO]   Training Fold 3...
+2025-11-05 16:54:07 [INFO]   - Early stopping at epoch 186
+2025-11-05 16:54:07 [INFO]   - (Finish) Fold Training
+2025-11-05 16:54:07 [INFO]   - Best validation Loss: 0.1273 (F1 at this point: 0.1026)
+2025-11-05 16:54:07 [INFO] Fold 3 F1 at Best Val Loss: 0.1026
+2025-11-05 16:54:08 [INFO] Save Graph: ../result/115_1529_kfold\training_history_fold_3.png
+2025-11-05 16:54:08 [INFO] Training History saved to: ../result/115_1529_kfold\training_history_fold_3.csv
+2025-11-05 16:54:08 [INFO] Fold 3 Time: 1389.72s
+2025-11-05 16:54:08 [INFO] 
+--- Fold 4/5 ---
+2025-11-05 16:54:08 [INFO] Train samples: 263191, Val samples: 65797
+2025-11-05 16:54:08 [INFO] Train Alert(1) count: 804
+2025-11-05 16:54:08 [INFO] Val Alert(1) count: 200
+2025-11-05 16:54:08 [INFO] Creating GNN model...
+2025-11-05 16:54:08 [INFO] Feature num: 22
+2025-11-05 16:54:08 [INFO] Model Hyperparameters: 
+{
+  "in_channels": 22,
+  "hidden_channels": 80,
+  "num_layers": 4,
+  "dropout": 0.4
+}
+2025-11-05 16:54:08 [INFO] Model parameters: 61,634
+
+2025-11-05 16:54:08 [INFO] Training Hyperparameters: 
+{
+  "epochs": 400,
+  "lr": 0.008,
+  "weight_decay": 0.0005
+}
+2025-11-05 16:54:10 [INFO]   Training Fold 4...
+2025-11-05 17:37:09 [INFO]   - (Finish) Fold Training
+2025-11-05 17:37:09 [INFO]   - Best validation Loss: 0.0907 (F1 at this point: 0.1334)
+2025-11-05 17:37:09 [INFO] Fold 4 F1 at Best Val Loss: 0.1334
+2025-11-05 17:37:10 [INFO] Save Graph: ../result/115_1529_kfold\training_history_fold_4.png
+2025-11-05 17:37:10 [INFO] Training History saved to: ../result/115_1529_kfold\training_history_fold_4.csv
+2025-11-05 17:37:10 [INFO] Fold 4 Time: 2581.66s
+2025-11-05 17:37:10 [INFO] 
+--- Fold 5/5 ---
+2025-11-05 17:37:10 [INFO] Train samples: 263191, Val samples: 65797
+2025-11-05 17:37:10 [INFO] Train Alert(1) count: 803
+2025-11-05 17:37:10 [INFO] Val Alert(1) count: 201
+2025-11-05 17:37:10 [INFO] Creating GNN model...
+2025-11-05 17:37:10 [INFO] Feature num: 22
+2025-11-05 17:37:10 [INFO] Model Hyperparameters: 
+{
+  "in_channels": 22,
+  "hidden_channels": 80,
+  "num_layers": 4,
+  "dropout": 0.4
+}
+2025-11-05 17:37:10 [INFO] Model parameters: 61,634
+
+2025-11-05 17:37:10 [INFO] Training Hyperparameters: 
+{
+  "epochs": 400,
+  "lr": 0.008,
+  "weight_decay": 0.0005
+}
+2025-11-05 17:37:12 [INFO]   Training Fold 5...
+2025-11-05 18:04:48 [INFO]   - Early stopping at epoch 263
+2025-11-05 18:04:48 [INFO]   - (Finish) Fold Training
+2025-11-05 18:04:48 [INFO]   - Best validation Loss: 0.1013 (F1 at this point: 0.1221)
+2025-11-05 18:04:48 [INFO] Fold 5 F1 at Best Val Loss: 0.1221
+2025-11-05 18:04:49 [INFO] Save Graph: ../result/115_1529_kfold\training_history_fold_5.png
+2025-11-05 18:04:49 [INFO] Training History saved to: ../result/115_1529_kfold\training_history_fold_5.csv
+2025-11-05 18:04:49 [INFO] Fold 5 Time: 1659.04s
+2025-11-05 18:04:49 [INFO] 
+============================================================
+2025-11-05 18:04:49 [INFO] K-Fold Training Complete
+2025-11-05 18:04:49 [INFO] All Folds 'F1 @ Best Loss': [0.1034, 0.1163, 0.1026, 0.1334, 0.1221]
+2025-11-05 18:04:49 [INFO] Average 'F1 @ Best Loss': 0.1156 กำ 0.0116
+2025-11-05 18:04:49 [INFO] Golden Metric: 0.1156
+2025-11-05 18:04:49 [INFO] ============================================================
+2025-11-05 18:04:49 [INFO] 
+All output models and charts are located in: ../result/115_1529_kfold/
+2025-11-05 18:04:49 [INFO] Log file saved to: ../result/115_1529_kfold\log.txt
