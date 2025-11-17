@@ -41,10 +41,10 @@ pip install -r requirements.txt
 分析特徵的重要性，輸出於每個訓練結果的資料夾中，gnn_feature_importance.csv與gnn_feature_importance.png
 
 ## Usage Steps
-### 特徵工程，進入Prepocess fold
+### 特徵工程，進入Preprocess fold
 1.      python ./feature_engineering.py
 
-### 圖資料建構，進入Prepocess fold
+### 圖資料建構，進入Preprocess fold
 2.      python ./graph.py
 
 ### 模型訓練，進入model fold
@@ -56,5 +56,6 @@ pip install -r requirements.txt
 
 ### 結果分析 (optional)，進入model fold 
         python ./analyze.py
+
 
 
