@@ -29,19 +29,19 @@ pip install -r requirements.txt
 
 ├── Preprocess/              [資料前處理]
 
-    ├── feature_engineering.py
+  ├── feature_engineering.py
 
-    └── graph.py
+  └── graph.py
 
 ├── Model/                   [模型訓練與推論]
 
-    ├── model.py             定義 GNN 模型架構 (GraphSAGE + GAT)
+  ├── model.py             定義 GNN 模型架構 (GraphSAGE + GAT)
 
-    ├── train.py             模型訓練
+  ├── train.py             模型訓練
 
-    ├── pred.py              模型推論
+  ├── pred.py              模型推論
 
-    └── analyze.py           結果分析腳本
+  └── analyze.py           結果分析腳本
 
 ├── Dataset/                 [資料集] 存放原始比賽資料
 
@@ -98,6 +98,7 @@ AI 工具
 
 程式碼修正
 * gemini、claude
+
 
 
 
