@@ -19,8 +19,6 @@ pip install -r requirements.txt
 
 雲端下載連結: https://drive.google.com/drive/folders/1xAudFl5vnxj_HW-Bgmr6WuTVNWfk3wM9?usp=sharing
 
-* Dataset
-
 * feature
 
 * graph
@@ -36,8 +34,15 @@ pip install -r requirements.txt
     ├── pred.py              模型推論
     └── analyze.py           結果分析腳本
 ├── Dataset/                 [資料集] 存放原始比賽資料
+    ├──初賽資料/
+        ├──acct_alert.csv
+        ├──acct_predict.csv
+        └──acct_transaction.csv
 ├── feature/                 [輸出] 存放 feature_engineering.py 產出的 csv
+    └──feature.csv
 ├── graph/                   [輸出] 存放 graph.py 產出的圖資料
+    ├──acct_mappings.csv
+    └──graph_data.pt
 ├── result/                  [輸出] 存放訓練模型 (.pth) 與分析結果
 ├── requirements.txt         環境套件清單
 └── README.md               專案說明文件
@@ -85,6 +90,7 @@ AI 工具
 
 程式碼修正
 * gemini、claude
+
 
 
 
