@@ -57,5 +57,16 @@ pip install -r requirements.txt
 ### 結果分析 (optional)，進入model fold 
         python ./analyze.py
 
+## 2. 參考資料
+
+模型
+* https://arxiv.org/abs/2006.04637
+
+AI 工具
+
+程式碼修正
+* gemini、claude
+
+
 
 
