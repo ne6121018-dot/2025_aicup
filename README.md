@@ -15,7 +15,7 @@ conda activate Final_AICUP
 pip install -r requirements.txt
 ```
 
-## Data Download
+## 2. Data Download
 
 雲端下載連結: https://drive.google.com/drive/folders/1xAudFl5vnxj_HW-Bgmr6WuTVNWfk3wM9?usp=sharing
 
@@ -25,22 +25,41 @@ pip install -r requirements.txt
 
 * graph
 
-### feature_engineering.py
-生成特徵並輸出於feature/feature.csv
+## 3. 專案結構 (Project Structure)
+.
+├── Preprocess/              # [資料前處理]
+│   ├── feature_engineering.py
+│   └── graph.py
+├── Model/                   # [模型訓練與推論]
+│   ├── model.py             # 定義 GNN 模型架構 (GraphSAGE + GAT)
+│   ├── train.py             # 模型訓練腳本
+│   ├── pred.py              # 模型推論腳本
+│   └── analyze.py           # 結果分析腳本
+├── Dataset/                 # [資料集] 存放原始比賽資料
+├── feature/                 # [輸出] 存放 feature_engineering.py 產出的 csv
+├── graph/                   # [輸出] 存放 graph.py 產出的圖資料
+├── result/                  # [輸出] 存放訓練模型 (.pth) 與分析結果
+├── requirements.txt         # 環境套件清單
+└── README.md                # 專案說明文件
 
-### graph.py
-將生成的feature.csv產出graph_data.pt與acct_mappings.csv
+## 4. 檔案功能說明 (File Descriptions)
 
-### train.py
-訓練模型，並且生成於當天日期的fold中，模型參數在此調整
+### Preprocess (前處理)
+Preprocess/feature_engineering.py: 讀取 Dataset/ 資料，生成特徵並輸出至 feature/feature.csv。
 
-### pred.py
-訓練完的model預測acct_pred.csv
+Preprocess/graph.py: 讀取 feature.csv，轉換為圖結構資料，輸出至 graph/。
 
-### analyze.py
-分析特徵的重要性，輸出於每個訓練結果的資料夾中，gnn_feature_importance.csv與gnn_feature_importance.png
+### Model (模型)
+Model/model.py: 定義 GraphSAGE 與 GAT 的模型類別 (Class) 與架構細節。
 
-## Usage Steps
+Model/train.py: 載入圖資料進行訓練，模型權重將儲存於 result/ 下的日期資料夾。
+
+Model/pred.py: 讀取訓練好的權重進行預測，產出 acct_pred.csv。
+
+Model/analyze.py: 分析模型特徵重要性，輸出圖表至 result/
+
+## 5. 執行步驟 (Usage Steps)
+
 ### 特徵工程，進入Preprocess fold
 1.      python ./feature_engineering.py
 
@@ -57,7 +76,7 @@ pip install -r requirements.txt
 ### 結果分析 (optional)，進入model fold 
         python ./analyze.py
 
-## 2. 參考資料
+## 參考資料
 
 模型
 * https://arxiv.org/abs/2006.04637
@@ -66,6 +85,7 @@ AI 工具
 
 程式碼修正
 * gemini、claude
+
 
 
 
